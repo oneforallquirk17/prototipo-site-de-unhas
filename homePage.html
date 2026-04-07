@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+  </head>
+  <body class="dark-mode">
+    
+      <header>
+        <h1>Unhas de Rainha</h1>
+      </header>
+      
+       <main>
+      <section id="apresentacao">
+        <div class="inicio">
+      <h2>Seja bem-vinda ao nosso site</h2>
+      <p>Você quer deixar suas unhas lindas por um preço que cabe no seu bolso? aqui é o lugar certo!</p>
+      </div>
+      </section>
+      
+      <section id="tabela">
+        <div class="tabela-preco">
+      <h2>Tabela de preços</h2>
+      <table>
+        <tr>
+        <th>Serviços</th>
+        <th>Valores</th>
+      </tr>
+      <tr>
+        <td>Pintura</td>
+        <td>R$ 15,00</td>
+      </tr>
+      <tr>
+        <td>Limpeza e manutenção</td>
+        <td>R$ 30,00</td>
+      </tr>
+      <tr>
+        <td>Pé de cure e mão de cure geral</td>
+        <td>R$ 35,00</td>
+      </tr>
+      </table>
+      </div>
+      </section>
+      
+      <section id="agendamento">
+        <h2>Agende seu atendimento</h2>
+        <form action="#" method="POST">
+          <div class="campo">
+          <label for="nome" >Digite o seu nome:</label>
+          <input type="text" id="nome" name="nome" placeholder="Digite seu Nome" required>
+          </div>
+          
+          <div class="campo">
+            <label for="data">Data Desejada</label>
+            <input type="date" id="data" name="data" required>
+          </div>
+          
+          <div class="campo">
+          <label for="servico">Serviço Desejado:</label>
+          <select id="servico" name="servico">
+            <option value="pintura">Pintura</option>
+            <option value="impeza">Limpeza e manutenção</option>
+            <option value="decorativos">Pé de cure e mão de cure geral</option>
+          </select>
+          </div>
+          
+          <div class="escolha">
+          <p>Formato da Unha</p>
+          <input type="radio" id="quadrada" name="formato" value="quadrada">
+          <label for="quadrada">Quadrada</label>
+          <input type="radio" id="arredondada" name="formato" value="arredondada">
+          <label for="arredondada">Arredondada</label>
+          </div>
+          
+          <div class="obs">
+          <label for="obs">Observações (cores,detalhes):</label><br>
+          <textarea id="obs" name="obs" rows="5" placeholder="Ex: Quero um esmalte vermelho com glitter..."></textarea>
+          </div>
+          
+          <button type="submit" onclick="agradecimento()" >Enviar solicitação</button>
+          
+          <p id="agradecer"></p>
+          
+          <script src="code.js"></script>
+        </form>
+      </section>
+      
+      <section id="sobre">
+        <div class="sobre">
+        <h2>Sobre a profíssional</h2>
+        <p>Gina Maria Gonçalves de Lima</p>
+        <p>46 anos (aprox.)</p>
+        <p>Esperiência no trabalho com unhas.</p>
+        </div>
+      </section>
+      </main>
+      
+      <footer>
+        <div class="footer">
+        <p>&copy; 2026 unhas de rainha - todos os direitos reservados.</p>
+        <a href="https://wa.me/8187974510"> -> Contato profíssional</a>
+        </div>
+      </footer>
+  </body>
+  </html>

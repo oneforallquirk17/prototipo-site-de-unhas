@@ -1,0 +1,128 @@
+*{ /* O (*) é chamado de "seletor universal"*/
+  /*Remove margens e preenchimentos padrão do navegador*/
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; /*Garante que o padding não aumente o tamanho total das caixas*/
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Sans-Serif;/* Define uma fonte moderna e fácil de ler*/
+}
+
+body { /*Modo normal "modo-claro"*/
+  background-color: #fffafb; /* Um branco com um toque rosado*/
+  color: #4a4a4a;/* Cor de texto principal (um cinza escuro para não cansar a vista)*/
+  line-height: 1.6; /*Melhora o espaçamento entre as linhas de texto */
+}
+
+header {
+  background-color: #ffb6c1; /*Rosa bem suave */
+  color: white;
+  padding: 40px 20px;/* Espaço interno para o título não ficar grudado nas bordas*/
+  text-align: center;
+  border-bottom: 5px solid #ff69b4; /*Linha rosa mais forte na parte de baixo para dar charme*/
+}
+
+header h1{
+  font-size: 2.5rem; /*Aumenta o tamanho da fonte do nome do salão*/
+  text-transform: uppercase; /*Deixar todas as letras em maiúsculo*/
+  letter-spacing: 2px; /*Aumenta o espaço entra as letras*/
+}
+
+main {
+  max-width: 800px; /*Define uma largura máxima para o site não ficar largo demais em telas grandes*/
+  margin: 20px auto;/*Centraliza o bloco principal na tela*/
+  padding: 20px;
+}
+
+section {
+  background: white; /*Cada seção parece um "cartão" branco flutuando*/
+  margin-bottom: 30px; /*Espaço entre uma seção e outra*/
+  padding: 25px; /*Espaço interno dentro do cartão*/
+  border-radius: 15px; /*Arredonda as pontas das seções*/
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /*Cria uma sombra bem leve para dar profundidade*/
+}
+
+h2 {
+  color: #ff69b4; /*Cor rosa choque para os títulos das seções*/
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ffe4e1; /*Linha fina decorativa abaixo do título*/
+  display: inline-block;
+}
+
+table {
+  width: 100%; /*Faz a tabela ocupar toda a largura da seção*/
+  border-collapse: collapse; /*Remove espaços duplos entre as bordas das células*/
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 12px; /*Espaço interno nas células da tabela*/
+  text-align: left;
+  border-bottom: 1px solid #ffe4e1; /*linha divisória entre os serviços*/
+}
+
+th {
+  background-color: #fff0f5; /*Fundo rosado para o cabesalho da tabela*/
+  color: #d02090; /*Cor do texto do cabeçalho da tabela*/
+}
+
+.campo {
+  margin-bottom: 20px; /*Espaço entre cada pergunta do formulário*/
+}
+
+label {
+  display: block; /*Faz o label ocupar a linha toda (fica em cima do input)*/
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #ff1493;
+}
+
+input[type="text"], select, textarea {
+  width: 100%; /*Faz as caixas de digitação ocuparem 100% da largura*/
+  padding: 12px;
+  border: 1px solid #ffb6c1; /*Borda rosa bem clarinho*/
+  border-radius: 8px; /*Arredonda os cantos das caixas de texto*/
+  outline-color: #ff69b4; /*Cor da borda quando você clica para digitar*/
+}
+
+input[type="date"] {
+  width: 50%;
+  padding: 5px;
+  border-radius: 9px;
+}
+
+button {
+  background-color: #ff1493; /*Estilo do botão de enviar (Rosa forte)*/
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  width: 100%;
+  cursor: pointer; /*Muda a seta do mouse para uma "mãosinha"*/
+  transition: background 0.3s; /*Deixa a mudança de cor suave ao passar o mouse*/
+}
+
+button:hover {
+  background-color: #d02090; /*Escurece o rosa quando o usuário passa o mouse ou toca*/
+}
+
+button:active{ /*Efeito que acontece no EXATO MOMENTO em que o botão é clicado*/
+transform: scale(0.95); /*Diminui o tamanho do botão (efeito de compresão)*/
+background-color: #b01a7a; /*Escurece um pouco mais a cor para parecer que afundou*/
+box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.2); /*Reduz a sombra para reforçar que ele encostou no 'fundo'*/
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #fff0f5;
+  margin-top: 50px;
+}
+
+.footer a {
+  color: #25d366; /*Estilo especial para o link do whatsAapp*/
+  text-decoration: none; /*Remove o sublinhado padrão dos links*/
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
